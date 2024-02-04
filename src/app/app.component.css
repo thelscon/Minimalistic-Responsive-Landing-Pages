@@ -1,0 +1,32 @@
+.header-component {
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(min-width: 50px) {
+    .header-component {
+        padding-left: 35px;
+        padding-right: 35px;
+
+        column-gap: 35px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header-component {
+        padding-left: 70px;
+        padding-right: 70px;
+
+        column-gap: 70px;
+    }
+}
+
+@media(min-width: 1440px) {
+}

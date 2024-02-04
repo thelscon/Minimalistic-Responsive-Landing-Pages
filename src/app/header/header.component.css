@@ -1,0 +1,40 @@
+.logotype-component {
+    display: grid;
+}
+
+.menu-component {
+    cursor: pointer;
+}
+
+@media(min-width: 50px) {
+    .logotype-component {
+        margin-top: 27px;
+        margin-bottom: 32px;
+    }
+    .menu-component{
+        margin-top: 28px;
+        margin-bottom: 32px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .logotype-component {
+        margin-top: 32px;
+        margin-bottom: 29px;
+    }
+    .menu-component{
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .logotype-component {
+        margin-top: 32px;
+        margin-bottom: 71px;
+    }
+    .menu-component{
+        margin-top: 32px;
+        margin-bottom: 72px;
+    }
+}

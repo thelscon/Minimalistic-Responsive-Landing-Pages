@@ -1,0 +1,12 @@
+@if (buttonMenuState) {
+    <button class="button-menu"></button>
+}
+
+@if (navigationState) {
+    <nav class="navigation">
+        @for (item of navigationItems; track $index) {
+            <a href="/" class="navigation-item">{{item}}</a>
+        }
+        @empty {}
+    </nav>
+}

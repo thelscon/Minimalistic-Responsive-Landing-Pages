@@ -1,0 +1,36 @@
+.button-menu {
+    width: 24px;
+    height: 24px;
+
+    border: 0px;
+    background: transparent url('../../../assets/images/menu.svg') center no-repeat;
+
+    cursor: pointer;
+}
+
+.navigation {
+    display: grid;
+}
+
+.navigation-item {
+    text-decoration: none;
+    color: #2B2B2B;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media(min-width: 50px) {
+}
+
+@media(min-width: 1024px) {
+    .navigation {
+        grid-template-columns: repeat(4, minmax(min-content, max-content));
+        column-gap: 40px;
+    }
+}
+
+@media(min-width: 1440px) {
+}
