@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { WindowServiceModel } from './window.model';
+import { WindowServiceModel } from './window.service.model';
 import { fromEvent } from 'rxjs';
 
 @Injectable({

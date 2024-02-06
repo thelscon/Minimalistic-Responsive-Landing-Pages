@@ -1,0 +1,114 @@
+.title {
+    grid-area: title;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #2A2A2A;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2A2A;
+    text-align: center;
+}
+
+.button {
+    grid-area: button;
+
+    cursor: pointer;
+    background-color: #285E67;
+    border-radius: 67px;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+}
+
+.wrap-image {
+    display: grid;
+
+    place-items: center;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.wrap-image-first {
+    grid-area: first-wrap;
+    grid-template-rows: 391px;
+}
+.wrap-image-second {
+    grid-area: second-wrap;
+    grid-template-rows: 390px;
+}
+
+@media(min-width: 50px) {
+    .title {
+        margin-bottom: 9px;
+
+        font-size: 37.9px;
+        line-height: 47px;
+    }
+    .content {
+        margin-top: 8px;
+        margin-bottom: 17px;
+    }
+    .button {
+        margin-top: 16px;
+        margin-bottom: 29px;
+
+        padding: 16px 57px;
+    }
+    .wrap-image-first {
+        margin-top: 28px;
+        margin-bottom: 14px;
+        
+        grid-template-columns: 356px;
+    }
+    .wrap-image-second {
+        margin-top: 14px;
+        grid-template-columns: 360px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .title {
+        font-size: 65.34px;
+        line-height: 82px;
+    }
+    .content {
+        margin-right: 129px;
+        margin-left: 129px;
+    }
+    .button {
+        padding: 16px 77px;
+    }
+    .wrap-image-first {
+        grid-template-columns: 427px;
+        justify-self: end;
+    }
+    .wrap-image-second {
+        grid-template-columns: 429px;
+        justify-self: start;
+    }
+}
+
+@media(min-width: 1440px) {
+    .content {
+        margin-right: 205px;
+        margin-left: 205px;
+    }
+    .wrap-image-first {
+        grid-template-columns: 626px;
+    }
+    .wrap-image-second {
+        grid-template-columns: 626px;
+    }
+}

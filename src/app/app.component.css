@@ -1,32 +1,52 @@
-.header-component {
-    padding-left: 35px;
-    padding-right: 35px;
-    
+.header-component {    
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, max-content));
     
     justify-content: space-between;
     align-items: center;
 }
+.main-conponent {
+    display: grid;
+}
 
 
 @media(min-width: 50px) {
     .header-component {
-        padding-left: 35px;
-        padding-right: 35px;
+        margin: 27px 8.1395348% 32px 8.1395348%;
 
         column-gap: 35px;
+    }
+    .main-conponent {
+        margin-left: 8.139%;
+        margin-right: 8.139%;
+        /* margin-left: 35px;
+        margin-right: 35px; */
     }
 }
 
 @media(min-width: 1024px) {
     .header-component {
-        padding-left: 70px;
-        padding-right: 70px;
+        margin: 32px 6.738281% 29px 8.59375%;
 
         column-gap: 70px;
+    }
+    .main-conponent {
+        margin-left: 6.8359375%;
+        margin-right: 6.8359375%;
+        /* margin-left: 70px;
+        margin-right: 70px; */
     }
 }
 
 @media(min-width: 1440px) {
+    .header-component {
+        margin-top: 32px;
+        margin-bottom: 71px;
+    }
+    .main-conponent {
+        margin-left: 4.8611111%;
+        margin-right: 4.8611111%;
+        /* margin-left: 70px;
+        margin-right: 70px; */
+    }
 }

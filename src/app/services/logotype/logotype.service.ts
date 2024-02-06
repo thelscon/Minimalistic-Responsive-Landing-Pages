@@ -1,11 +1,11 @@
 import { Injectable } from "@angular/core";
 
-import { LogotypeServiceModel } from "./logotype.model";
+import { LogotypeServiceModel } from "./logotype.service.model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogotypeService implements LogotypeServiceModel {
-  image = '../../../assets/images/logotype.svg'
-  text = 'Logo'
+  readonly pathToImage = '../../../assets/images/logotype.svg'
+  readonly name = 'Logo'
 }

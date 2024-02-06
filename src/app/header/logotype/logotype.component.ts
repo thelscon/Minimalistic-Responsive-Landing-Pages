@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { LogotypeComponentModel } from './logotype.model';
+import { LogotypeComponentModel } from './logotype.component.model';
 import { LogotypeService } from "../../services/logotype/logotype.service"
 
 @Component({
@@ -13,6 +13,6 @@ import { LogotypeService } from "../../services/logotype/logotype.service"
 export class LogotypeComponent implements LogotypeComponentModel {
 
   constructor (
-    public logotypeService : LogotypeService
+    readonly logotypeService : LogotypeService
   ) {}
 }

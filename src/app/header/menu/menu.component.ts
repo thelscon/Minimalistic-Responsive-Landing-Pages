@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { MenuComponentModel } from './menu.model';
+import { MenuComponentModel } from './menu.component.model';
 import { WindowService } from '../../services/window/window.service';
-import { NavigationItems } from '../../services/navigation/navigation.model';
+import { NavigationItems } from '../../services/navigation/navigation.service.model';
 import { NavigationService } from '../../services/navigation/navigation.service';
 
 @Component({
@@ -17,7 +17,10 @@ export class MenuComponent implements MenuComponentModel {
   navigationState = window.innerWidth < 1024 ? false : true
   navigationItems : NavigationItems[]
 
-  constructor (windowService : WindowService , navigationService : NavigationService) {
+  constructor (
+      readonly windowService : WindowService ,
+      readonly navigationService : NavigationService
+    ) {
     this.navigationItems = navigationService.items
 
     windowService.resize.subscribe (() => {

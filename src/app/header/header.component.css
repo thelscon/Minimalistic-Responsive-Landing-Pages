@@ -7,34 +7,18 @@
 }
 
 @media(min-width: 50px) {
-    .logotype-component {
-        margin-top: 27px;
-        margin-bottom: 32px;
-    }
     .menu-component{
-        margin-top: 28px;
-        margin-bottom: 32px;
+        margin-top: 1px;
+        margin-bottom: 1px;
     }
 }
 
 @media(min-width: 1024px) {
-    .logotype-component {
-        margin-top: 32px;
-        margin-bottom: 29px;
-    }
     .menu-component{
-        margin-top: 32px;
-        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-bottom: 2px;
     }
 }
 
 @media(min-width: 1440px) {
-    .logotype-component {
-        margin-top: 32px;
-        margin-bottom: 71px;
-    }
-    .menu-component{
-        margin-top: 32px;
-        margin-bottom: 72px;
-    }
 }

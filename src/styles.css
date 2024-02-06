@@ -27,12 +27,18 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    border: 0;
 }
 
 body {
-    min-width: 430px;
+    display: grid;
+    grid-template-columns: minmax(430px, 1440px);
+    justify-content: center;
 }
 
 .root {
+    /* width: 100%; */
+    max-width: 1440px;
     display: grid;
+    
 }

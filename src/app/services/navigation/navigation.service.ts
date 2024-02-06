@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { NavigationItems } from './navigation.model';
-import { NavigationServiceModel } from './navigation.model';
+import { NavigationItems } from './navigation.service.model';
+import { NavigationServiceModel } from './navigation.service.model';
 
 @Injectable({
   providedIn: 'root'

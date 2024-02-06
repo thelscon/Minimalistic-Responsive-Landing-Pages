@@ -1,5 +1,4 @@
 .logotype {
-    /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, max-content));
     column-gap: 12px;
@@ -15,4 +14,19 @@
     font-weight: 600;
     font-size: 21.33px;
     line-height: 24px;
+}
+
+@media(min-width: 50px) {
+    .logotype-image-circle {
+        fill: #F4F4F4;
+    }
+}
+
+@media(min-width: 1024px) {
+    .logotype-image-circle {
+        fill: #D0D0D0;
+    }
+}
+
+@media(min-width: 1440px) {
 }
