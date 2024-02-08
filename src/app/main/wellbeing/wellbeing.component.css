@@ -1,0 +1,43 @@
+.title {
+    grid-area: title;
+    margin-right: 55px;
+    margin-left: 55px;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 39.7px;
+    line-height: 53px;
+    color: #2B2B2B;
+}
+
+.content {
+    margin-right: 58.5px;
+    margin-left: 42.5px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2A2A;
+}
+
+figure:nth-of-type(1) {
+    grid-area: first;
+}
+
+figure:nth-of-type(2) {
+    grid-area: second;
+}
+
+.image {
+    grid-area: image;
+}
+
+@media(min-width: 50px) {
+}
+
+@media(min-width: 1024px) {
+}
+
+@media(min-width: 1440px) {
+}

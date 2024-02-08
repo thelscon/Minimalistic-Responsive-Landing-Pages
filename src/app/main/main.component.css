@@ -1,6 +1,14 @@
 .the-down-component {
     display: grid;
+    place-items: center;
+}
 
+.wellbeing-component {
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    text-align: center;
+
+    display: grid;
     place-items: center;
 }
 
@@ -10,6 +18,12 @@
         margin-bottom: 18px;
 
         grid-template-areas: 'title' 'content' 'button' 'first-wrap' 'second-wrap';
+    }
+    .wellbeing-component {
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+        grid-template-areas: 'title' 'first' 'second';
     }
 }
 
@@ -24,6 +38,13 @@
                                 'first-wrap second-wrap';
         column-gap: 28px;
     }
+    .wellbeing-component {
+        margin-top: 41px;
+        margin-bottom: 40px;
+
+        grid-template-areas:    'title title'
+                                'first second';
+    }
 }
 
 @media(min-width: 1440px) {
@@ -32,5 +53,12 @@
         margin-bottom: 54px;
 
         column-gap: 48px;
+    }
+    .wellbeing-component {
+        margin-top: 53px;
+        margin-bottom: 52px;
+
+        grid-template-areas:    'title title image'
+                                'first second image';
     }
 }
