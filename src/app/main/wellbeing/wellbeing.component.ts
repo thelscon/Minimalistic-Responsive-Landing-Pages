@@ -24,16 +24,21 @@ export class WellbeingComponent implements WellbeingComponentModel {
           this.title = this.changeTitle ()
         }
         else {
-          this.title = wellbeingService.title
+          if (window.innerWidth < 1024) {
+            this.title = wellbeingService.spaceTitle
+          }
+          else {
+            this.title = wellbeingService.title
+          }
         }
       })
   }
 
   changeTitle () {
-    const arrayTitle = [...this.wellbeingService.title]
+    const arrayTitle = [...this.wellbeingService.spaceTitle]
     let firstSpace = false
     return arrayTitle.map ((value) => {
-      if (value === ' ' && !firstSpace) {
+      if (window.innerWidth <= 530 && value === ' ' && !firstSpace) {
         firstSpace = !firstSpace
         return '<br>'
       }

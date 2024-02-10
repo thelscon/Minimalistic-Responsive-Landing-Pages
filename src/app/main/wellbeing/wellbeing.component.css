@@ -1,19 +1,18 @@
 .title {
     grid-area: title;
-    margin-right: 55px;
-    margin-left: 55px;
 
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 39.7px;
-    line-height: 53px;
     color: #2B2B2B;
 }
 
-.content {
-    margin-right: 58.5px;
-    margin-left: 42.5px;
+.figure {
+    display: grid;
 
+    justify-items: center;
+}
+
+.figure-content {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
@@ -21,23 +20,103 @@
     color: #2A2A2A;
 }
 
-figure:nth-of-type(1) {
+.figure:nth-of-type(1) {
     grid-area: first;
 }
 
-figure:nth-of-type(2) {
+.figure:nth-of-type(2) {
     grid-area: second;
 }
 
-.image {
+.human-image {
     grid-area: image;
 }
 
 @media(min-width: 50px) {
+    .title {
+        margin-top: 74.5px;
+        margin-bottom: 20px;
+        font-size: 39.7px;
+        line-height: 53px;
+    }
+    .figure {
+        margin-right: 4.4444444%;
+        width: 70.83333%;        
+
+        row-gap: 20px;
+    }
+    .figure-content {
+        padding-bottom: 15px;
+    }
+    .figure:nth-of-type(1) {
+        margin-top: 20px;
+        margin-bottom: 13px;
+    }
+    .figure:nth-of-type(2) {
+        margin-top: 13px;
+        margin-bottom: 31.5px;
+    }
 }
 
 @media(min-width: 1024px) {
+    .title {
+        margin-top: 64px;
+        margin-bottom: 35px;
+        font-size: 50.52px;
+        line-height: 63px;
+    }
+    .figure {
+        margin-right: 0;
+    }
+    .figure-content {
+        padding-bottom: 14.54px;
+    }
+    .figure:nth-of-type(1) {
+        width: 62.807%;
+        margin-top: 34px;
+        margin-bottom: 96.96px;
+        justify-self: right;
+    }
+    .figure:nth-of-type(2) {
+        width: 60.564%;
+        margin-top: 34px;
+        margin-bottom: 96.5px;
+        justify-self: left;
+    }
 }
 
 @media(min-width: 1440px) {
+    .title {
+        margin-top: 99.73px;
+        margin-bottom: 14px;
+        margin-left: 112px;
+
+        justify-self: left;
+    }
+    .figure {
+        justify-items: left;
+        text-align: left;
+    }
+    .figure:nth-of-type(1) {
+        width: 260px;
+        margin-top: 30px;
+        margin-right: 35px;
+        margin-bottom: 51.73px;
+        margin-left: 112px;
+        justify-self: left;
+    }
+    .figure:nth-of-type(2) {
+        width: 260px;
+        margin-top: 30px;
+        margin-bottom: 51.73px;
+        margin-left: 34px;
+        justify-self: left;
+    }
+    .human-image {
+        margin-bottom: 8px;
+        margin-left: 4.51%;
+
+        justify-self: center;
+        align-self: end;        
+    }
 }

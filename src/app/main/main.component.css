@@ -1,6 +1,6 @@
 .the-down-component {
     display: grid;
-    place-items: center;
+    justify-items: center;
 }
 
 .wellbeing-component {
@@ -9,7 +9,6 @@
     text-align: center;
 
     display: grid;
-    place-items: center;
 }
 
 @media(min-width: 50px) {
@@ -24,6 +23,7 @@
         margin-bottom: 18px;
 
         grid-template-areas: 'title' 'first' 'second';
+        justify-items: center;
     }
 }
 
@@ -44,6 +44,7 @@
 
         grid-template-areas:    'title title'
                                 'first second';
+        column-gap: 81.5px;
     }
 }
 
@@ -55,10 +56,13 @@
         column-gap: 48px;
     }
     .wellbeing-component {
+        width: 100%;
         margin-top: 53px;
         margin-bottom: 52px;
 
         grid-template-areas:    'title title image'
                                 'first second image';
+        grid-template-columns: max-content max-content 1fr;
+        column-gap: 0;
     }
 }
