@@ -11,6 +11,12 @@
     display: grid;
 }
 
+.frash-organic-produce {
+    font-family: 'Poppins';
+
+    display: grid;
+}
+
 @media(min-width: 50px) {
     .the-down-component {
         margin-top: 31px;
@@ -23,6 +29,15 @@
         margin-bottom: 18px;
 
         grid-template-areas: 'title' 'first' 'second';
+        justify-items: center;
+    }
+    .frash-organic-produce {
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+        grid-template-areas: 'image' 'title' 'content' 'list';
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, max-content);
         justify-items: center;
     }
 }
@@ -46,6 +61,18 @@
                                 'first second';
         column-gap: 81.5px;
     }
+
+    .frash-organic-produce {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        grid-template-areas:    'image title'
+                                'image content'
+                                'image list';
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+        grid-template-rows: repeat(2, max-content) 1fr;
+        justify-items: left;
+    }
 }
 
 @media(min-width: 1440px) {
@@ -64,5 +91,9 @@
                                 'first second image';
         grid-template-columns: max-content max-content 1fr;
         column-gap: 0;
+    }
+    .frash-organic-produce {
+        margin-top: 52px;
+        margin-bottom: 52px;
     }
 }

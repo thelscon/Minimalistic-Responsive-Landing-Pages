@@ -91,10 +91,12 @@
         padding: 16px 77px;
     }
     .wrap-image-first {
+        margin-top: 29px;
         grid-template-columns: 427px;
         justify-self: end;
     }
     .wrap-image-second {
+        margin-top: 29px;
         grid-template-columns: 429px;
         justify-self: start;
     }
@@ -106,9 +108,11 @@
         margin-left: 205px;
     }
     .wrap-image-first {
+        margin-top: 28px;
         grid-template-columns: 626px;
     }
     .wrap-image-second {
+        margin-top: 28px;
         grid-template-columns: 626px;
     }
 }
