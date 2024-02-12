@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FrashOrganicProduceComponentModel } from './frash-organic-produce.component.model';
+import { FrashOrganicProduceService } from '../../services/frash-organic-produce/frash-organic-produce.service';
 
 @Component({
   selector: 'mn-frash-organic-produce',
@@ -10,5 +11,7 @@ import { FrashOrganicProduceComponentModel } from './frash-organic-produce.compo
   styleUrl: './frash-organic-produce.component.css'
 })
 export class FrashOrganicProduceComponent implements FrashOrganicProduceComponentModel {
-
+  constructor (
+    readonly frashOrganicProduceService : FrashOrganicProduceService
+  ) {}
 }
