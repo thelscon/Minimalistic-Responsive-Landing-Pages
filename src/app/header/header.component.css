@@ -7,14 +7,14 @@
 }
 
 @media(min-width: 50px) {
-    .menu-component{
+    .menu-component {
         margin-top: 1px;
         margin-bottom: 1px;
     }
 }
 
 @media(min-width: 1024px) {
-    .menu-component{
+    .menu-component {
         margin-top: 0px;
         margin-bottom: 2px;
     }
