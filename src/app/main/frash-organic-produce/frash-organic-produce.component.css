@@ -82,13 +82,16 @@
         margin: 0;
         
         grid-template-columns: 429.5px;
+        align-self: center;
     }
     
     .title {
-        margin: 2px 0 4px 0;
+        margin: 0 0 4px 0;
         text-align: left;
         font-size: 50.52px;
         line-height: 62px;
+
+        align-self: end;
     }
 
     .content {
@@ -109,7 +112,7 @@
     }
 
     .title {
-        margin: 52px 0 12px 0;
+        margin: 0 0 12px 0;
     }
 
     .content {

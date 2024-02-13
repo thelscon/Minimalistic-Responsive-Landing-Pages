@@ -12,15 +12,12 @@
 
 @media(min-width: 50px) {
     .header-component {
-        margin: 27px 8.1395348% 32px 8.1395348%;
+        margin: 27px 8.1395348% 32px;
 
         column-gap: 35px;
     }
     .main-conponent {
-        margin-left: 8.1395348%;
-        margin-right: 8.1395348%;
-        /* margin-left: 35px;
-        margin-right: 35px; */
+        margin: 0 8.1395348%;
     }
 }
 
@@ -31,22 +28,15 @@
         column-gap: 70px;
     }
     .main-conponent {
-        margin-left: 6.8359375%;
-        margin-right: 6.8359375%;
-        /* margin-left: 70px;
-        margin-right: 70px; */
+        margin: 0 6.8359375%;
     }
 }
 
 @media(min-width: 1440px) {
     .header-component {
-        margin-top: 32px;
-        margin-bottom: 71px;
+        margin: 32px 4.7916666% 71px 6.111111%;
     }
     .main-conponent {
-        margin-left: 4.8611111%;
-        margin-right: 4.8611111%;
-        /* margin-left: 70px;
-        margin-right: 70px; */
+        margin: 0 4.8611111%;
     }
 }
