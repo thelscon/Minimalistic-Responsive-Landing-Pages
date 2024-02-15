@@ -9,7 +9,6 @@
     display: grid;
 }
 
-
 @media(min-width: 50px) {
     .header-component {
         margin: 27px 8.1395348% 32px;
