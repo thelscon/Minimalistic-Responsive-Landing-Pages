@@ -59,7 +59,7 @@
 
 @media(min-width: 1024px) {
     .title {
-        margin: 117.73px 11.805555% 50px 0;
+        margin: 117.73px 11.805555% 50px 12.258%;
 
         font-size: 50.53px;
         line-height: 30px;
@@ -82,7 +82,7 @@
 
 @media(min-width: 1440px) {
     .title {
-        margin-right: 0;
+        margin-left: 0;
         margin-top: 139px;
         margin-bottom: 31px;
 
@@ -91,7 +91,7 @@
     }
     .figure {
         max-width: 237px;
-        
+
         justify-items: left;
     }
     .figure:nth-of-type(1) {
