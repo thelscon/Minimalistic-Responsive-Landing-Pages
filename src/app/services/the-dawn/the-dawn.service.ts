@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { TheDownServiceModel } from './the-down.service.model';
+import { TheDawnServiceModel } from './the-dawn.service.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TheDownService implements TheDownServiceModel{
+export class TheDawnService implements TheDawnServiceModel{
   title = 'The dawn of a new era in health is here'
   content = 'Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus  platea orci vel elit blandit facilisis'
   buttonText = 'Join now'

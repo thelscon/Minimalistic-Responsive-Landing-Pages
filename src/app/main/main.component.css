@@ -1,4 +1,4 @@
-.the-down-component {
+.the-dawn-component {
     display: grid;
     justify-items: center;
 }
@@ -25,8 +25,12 @@
     background-color: #F4F4F4;
 }
 
+.starts {
+    display: grid;
+}
+
 @media(min-width: 50px) {
-    .the-down-component {
+    .the-dawn-component {
         margin: 31px 0 18px;
 
         grid-template-areas: 'title' 'content' 'button' 'first-wrap' 'second-wrap';
@@ -55,7 +59,7 @@
 }
 
 @media(min-width: 1024px) {
-    .the-down-component {
+    .the-dawn-component {
         margin: 29px 0 42px;
 
         grid-template-areas:    'title title'
@@ -94,7 +98,7 @@
 }
 
 @media(min-width: 1440px) {
-    .the-down-component {
+    .the-dawn-component {
         margin: 71px 0 54px;
 
         column-gap: 48px;

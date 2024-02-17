@@ -1,4 +1,4 @@
-export interface TheDownServiceModel {
+export interface TheDawnServiceModel {
     title : string
     content : string
     buttonText : string
