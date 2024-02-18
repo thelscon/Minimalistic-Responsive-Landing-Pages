@@ -7,5 +7,12 @@ import { fromEvent } from 'rxjs';
   providedIn: 'root'
 })
 export class WindowService implements WindowServiceModel {
+  width = window.innerWidth
   readonly resize = fromEvent (window , 'resize')
+
+  constructor () {
+    this.resize.subscribe (()=> {
+      this.width = window.innerWidth
+    })
+  }
 }

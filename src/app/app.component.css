@@ -15,9 +15,6 @@
 
         column-gap: 35px;
     }
-    .main-conponent {
-        margin: 0 8.1395348%;
-    }
 }
 
 @media(min-width: 1024px) {
@@ -26,16 +23,10 @@
 
         column-gap: 70px;
     }
-    .main-conponent {
-        margin: 0 6.8359375%;
-    }
 }
 
 @media(min-width: 1440px) {
     .header-component {
         margin: 32px 4.7916666% 71px 6.111111%;
-    }
-    .main-conponent {
-        margin: 0 4.8611111%;
     }
 }

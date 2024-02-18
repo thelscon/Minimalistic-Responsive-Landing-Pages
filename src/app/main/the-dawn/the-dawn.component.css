@@ -1,7 +1,6 @@
 .title {
     grid-area: title;
 
-    font-family: 'Poppins';
     font-weight: 600;
     color: #2A2A2A;
     text-align: center;
@@ -10,7 +9,6 @@
 .content {
     grid-area: content;
 
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -25,7 +23,6 @@
     background-color: #285E67;
     border-radius: 67px;
 
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 21.33px;
     line-height: 24px;

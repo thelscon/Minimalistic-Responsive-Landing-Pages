@@ -2,7 +2,6 @@
     max-width: 589px;
     grid-area: title;
 
-    font-family: 'Poppins';
     font-weight: 600;
     color: #2B2B2B;
 }
@@ -14,7 +13,6 @@
 }
 
 .figure-content {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -115,7 +113,7 @@
     }
     .human-image {
         margin-bottom: 8px;
-        margin-left: 4.51%;
+        margin-left: 14.023372%;
 
         justify-self: center;
         align-self: end;        

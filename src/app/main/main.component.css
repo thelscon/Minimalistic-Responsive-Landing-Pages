@@ -1,12 +1,16 @@
 .the-dawn-component {
+    font-family: 'Poppins';
+
     display: grid;
     justify-items: center;
 }
 
 .wellbeing-component {
+    font-family: 'Poppins';
+    text-align: center;
+
     background-color: #F4F4F4;
     border-radius: 12px;
-    text-align: center;
 
     display: grid;
 }
@@ -26,24 +30,36 @@
 }
 
 .starts {
+    font-family: 'Poppins';
+    
     display: grid;
+    justify-items: center;
+}
+
+.starts::before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+
+    background-image: url('../../assets/images/starts.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media(min-width: 50px) {
     .the-dawn-component {
-        margin: 31px 0 18px;
+        margin: 31px 8.1395348% 18px;
 
         grid-template-areas: 'title' 'content' 'button' 'first-wrap' 'second-wrap';
     }
     .wellbeing-component {
-        margin: 18px 0;
+        margin: 18px 8.1395348%;
 
         grid-template-areas: 'title' 'first' 'second';
         justify-items: center;
     }
     .frash-organic-produce {
-        margin-top: 18px;
-        margin-bottom: 25px;
+        margin: 18px 8.1395348% 25px;
 
         grid-template-areas: 'image' 'title' 'content' 'list';
         grid-template-columns: 1fr;
@@ -51,16 +67,27 @@
         justify-items: center;
     }
     .you-are {
-        margin: 18px 0;
+        margin: 18px 8.1395348% 19px;
 
         grid-template-areas: 'title' 'first-figure' 'second-figure';
         justify-items: center;
+    }
+    .starts {
+        margin: 18px 8.02325583% 30px ;
+    }
+    .starts::before {
+        min-width: 361px;
+        width: calc(100% - 8.02325583% - 8.02325583%);
+        height: 354px;
+        border-radius: 12px;
+
+        background-size: 100% 354px;
     }
 }
 
 @media(min-width: 1024px) {
     .the-dawn-component {
-        margin: 29px 0 42px;
+        margin: 29px 6.8359375% 42px;
 
         grid-template-areas:    'title title'
                                 'content content'
@@ -69,7 +96,7 @@
         column-gap: 28px;
     }
     .wellbeing-component {
-        margin: 41px 0 40px;
+        margin: 41px 6.8359375% 40px;
 
         grid-template-areas:    'title title'
                                 'first second';
@@ -77,7 +104,7 @@
     }
 
     .frash-organic-produce {
-        margin: 40px 0;
+        margin: 40px 6.8359375%;
 
         grid-template-areas:    'image title'
                                 'image content'
@@ -89,23 +116,32 @@
         column-gap: 25px;
     }
     .you-are {
-        margin: 40px 0;
+        margin: 40px 6.8359375%;
 
         grid-template-areas:    'title title'
                                 'first-figure second-figure';
         column-gap: 69px;
     }
+    .starts {
+        margin: 40px 6.8359375% 43.75px;
+    }
+    .starts::before {
+        width: calc(100% - 6.8359375% - 6.8359375%);
+        height: 667px;
+        border-radius: 0;
+        
+        background-size: auto;
+    }
 }
 
 @media(min-width: 1440px) {
     .the-dawn-component {
-        margin: 71px 0 54px;
+        margin: 71px 4.8611111% 54px;
 
         column-gap: 48px;
     }
     .wellbeing-component {
-        margin: 53px 0 52px;
-        width: 100%;
+        margin: 53px 4.8611111% 52px;
 
         grid-template-areas:    'title title image'
                                 'first second image';
@@ -113,12 +149,12 @@
         column-gap: 0;
     }
     .frash-organic-produce {
-        margin: 52px 0;
+        margin: 52px 4.8611111%;
 
         column-gap: 53px;
     }
     .you-are {
-        margin: 52px 0;
+        margin: 52px 4.8611111%;
 
         grid-template-areas:    'image title title'
                                 'image first-figure second-figure';
@@ -127,5 +163,14 @@
         
         align-items: start;
         justify-items: left;
+    }
+    .starts {
+        margin: 52px 4.861111% 59px;
+    }
+    .starts::before {
+        width: 100%;
+        border-radius: 12px;
+        
+        background-size: auto;
     }
 }
