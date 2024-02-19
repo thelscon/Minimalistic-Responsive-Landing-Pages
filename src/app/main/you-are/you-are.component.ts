@@ -12,13 +12,18 @@ import { YouAreService } from '../../services/you-are/you-are.service';
   styleUrl: './you-are.component.css'
 })
 export class YouAreComponent implements YouAreComponentModel {
-  windowSize = window.innerWidth
+  get windowSize () {
+    return this.windowService.width
+  }
+  get title () {
+    return this.youAreService.title
+  }
+  get figureContent () {
+    return this.youAreService.figureContent
+  }
 
   constructor (
-    readonly windowService : WindowService ,
-    readonly youAreService : YouAreService) {
-    windowService.resize.subscribe (() => {
-      this.windowSize = window.innerWidth
-    })
-  }
+    private readonly windowService : WindowService ,
+    private readonly youAreService : YouAreService
+  ) {}
 }

@@ -12,23 +12,34 @@ import { WindowService } from '../../services/window/window.service';
   styleUrl: './wellbeing.component.css'
 })
 export class WellbeingComponent implements WellbeingComponentModel {
-  windowWidth = window.innerWidth
-  title = this.changeTitle ()
+  finalTitle = this.changeTitle ()
+
+  get windowWidth () {
+    return this.windowService.width
+  }
+  get title () {
+    return this.wellbeingService.title
+  }
+  get spaceTitle () {
+    return this.wellbeingService.spaceTitle
+  }
+  get content () {
+    return this.wellbeingService.content
+  }
   
   constructor (
-    readonly wellbeingService : WellbeingService ,
-    readonly windowService : WindowService) {
+    private readonly wellbeingService : WellbeingService ,
+    private readonly windowService : WindowService) {
       windowService.resize.subscribe (() => {
-        this.windowWidth = window.innerWidth
-        if (window.innerWidth <= 530) {
-          this.title = this.changeTitle ()
+        if (this.windowService.width <= 530) {
+          this.finalTitle = this.changeTitle ()
         }
         else {
-          if (window.innerWidth < 1024) {
-            this.title = wellbeingService.spaceTitle
+          if (this.windowService.width < 1024) {
+            this.finalTitle = this.wellbeingService.spaceTitle
           }
           else {
-            this.title = wellbeingService.title
+            this.finalTitle = this.wellbeingService.title
           }
         }
       })
@@ -38,7 +49,7 @@ export class WellbeingComponent implements WellbeingComponentModel {
     const arrayTitle = [...this.wellbeingService.spaceTitle]
     let firstSpace = false
     return arrayTitle.map ((value) => {
-      if (window.innerWidth <= 530 && value === ' ' && !firstSpace) {
+      if (this.windowService.width <= 530 && value === ' ' && !firstSpace) {
         firstSpace = !firstSpace
         return '<br>'
       }

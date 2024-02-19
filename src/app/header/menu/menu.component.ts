@@ -13,38 +13,34 @@ import { NavigationService } from '../../services/navigation/navigation.service'
   styleUrl: './menu.component.css'
 })
 export class MenuComponent implements MenuComponentModel {
-  buttonMenuState = window.innerWidth < 1024 ? true : false
-  navigationState = window.innerWidth < 1024 ? false : true
-  navigationItems : NavigationItems[]
+  menuButtonVisibility = this.windowService.width < 1024 ? true : false
+  navigationVisibility = this.windowService.width < 1024 ? false : true
+  navigationItems  = this.navigationService.items
 
   constructor (
-      readonly windowService : WindowService ,
-      readonly navigationService : NavigationService
-    ) {
-    this.navigationItems = navigationService.items
-
-    windowService.resize.subscribe (() => {
-      const windowInnerWidth = window.innerWidth
-      
-      if (windowInnerWidth < 1024) {
-        if (this.buttonMenuState ===  false) {
-          this.buttonMenuState = true
+      private readonly windowService : WindowService ,
+      private readonly navigationService : NavigationService
+  ) {
+    windowService.resize.subscribe (() => {      
+      if (this.windowService.width < 1024) {
+        if (this.menuButtonVisibility ===  false) {
+          this.menuButtonVisibility = true
         }
       }
       else {
-        if (this.buttonMenuState === true) {
-          this.buttonMenuState = false
+        if (this.menuButtonVisibility === true) {
+          this.menuButtonVisibility = false
         }
       }
 
-      if (windowInnerWidth < 1024) {
-        if (this.navigationState ===  true) {
-          this.navigationState = false
+      if (this.windowService.width < 1024) {
+        if (this.navigationVisibility ===  true) {
+          this.navigationVisibility = false
         }
       }
       else {
-        if (this.navigationState === false) {
-          this.navigationState = true
+        if (this.navigationVisibility === false) {
+          this.navigationVisibility = true
         }
       }
     })

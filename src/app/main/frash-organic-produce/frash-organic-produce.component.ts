@@ -11,7 +11,20 @@ import { FrashOrganicProduceService } from '../../services/frash-organic-produce
   styleUrl: './frash-organic-produce.component.css'
 })
 export class FrashOrganicProduceComponent implements FrashOrganicProduceComponentModel {
+  get title () {
+    return this.frashOrganicProduceService.title
+  }
+  get content () {
+    return this.frashOrganicProduceService.content
+  }
+  get listContent () {
+    return this.frashOrganicProduceService.listContent
+  }
+  get pathToImage () {
+    return this.frashOrganicProduceService.pathToImage
+  }
+
   constructor (
-    readonly frashOrganicProduceService : FrashOrganicProduceService
+    private readonly frashOrganicProduceService : FrashOrganicProduceService
   ) {}
 }

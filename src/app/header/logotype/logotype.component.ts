@@ -11,8 +11,11 @@ import { LogotypeService } from "../../services/logotype/logotype.service"
   styleUrl: './logotype.component.css'
 })
 export class LogotypeComponent implements LogotypeComponentModel {
+  get name () {
+    return this.logotypeService.name
+  }
 
   constructor (
-    readonly logotypeService : LogotypeService
+    private readonly logotypeService : LogotypeService
   ) {}
 }

@@ -2,6 +2,7 @@ export interface StartsServiceModel {
     spaceTitle : string
     title : string
     content : string
-    button : string
+    buttonText : string
     plantTitle : string
+    pathToImage : string
 }

@@ -1,12 +1,11 @@
-@if (buttonMenuState) {
+@if (menuButtonVisibility) {
     <button class="button-menu"></button>
 }
 
-@if (navigationState) {
+@if (navigationVisibility) {
     <nav class="navigation">
         @for (item of navigationItems; track $index) {
             <a href="/" class="navigation-item">{{item}}</a>
         }
-        @empty {}
     </nav>
 }
