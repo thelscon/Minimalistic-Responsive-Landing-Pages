@@ -1,3 +1,9 @@
+.main {
+    display: grid;
+    justify-items: center;
+    background: url('../../../assets/images/starts.png') no-repeat center;
+}
+
 .title {
     font-weight: 600;
     color: #FFFFFF;
@@ -46,6 +52,10 @@
 }
 
 @media(min-width: 50px) {
+    .main {
+        border-radius: 12px;
+        background-size: 100% 100%;
+    }
     .icon {
         margin: 71.76px 0 7px;
 
@@ -70,13 +80,13 @@
         line-height: 31px;
     }
     .join-now {
-        margin: 6px 0 19.38px;
+        margin: 6px 62px 106.76px;
         padding: 11px 62px;
 
         font-size: 16.33px;
     }
     .plants {
-        margin: 19.38px 8.86426592% 30px 8.587257%;
+        margin: -68px 8.86426592% 30px 8.587257%;
 
         padding: 71px 0;
 
@@ -89,6 +99,10 @@
 }
 
 @media(min-width: 1024px) {
+    .main {
+        border-radius: 0px;
+        background-size: cover;
+    }
     .icon {
         margin: 110.47px 0 23px;
 
@@ -106,13 +120,13 @@
         margin: 10px 13.235% 15px;
     }
     .join-now {
-        margin: 15px 0 24.235px;
+        margin: 15px 80px 239.97px;
 
         padding: 16px 80px;
         font-size: 21.33px;
     }
     .plants {
-        margin: 24.235px 7.975113% 43.75px;
+        margin: -191.5px 7.975113% 43.75px;
 
         padding: 71px 0;
         row-gap: 50px;
@@ -130,8 +144,14 @@
 }
 
 @media(min-width: 1440px) {
+    .main {
+        border-radius: 12px;
+    }
+    .join-now {
+        margin-bottom: 239.47px;
+    }
     .plants {
-        margin: 24.235px 5.1923078% 59px;
+        margin: -191px 5.1923078% 59px;
 
         padding: 119px 0;
 

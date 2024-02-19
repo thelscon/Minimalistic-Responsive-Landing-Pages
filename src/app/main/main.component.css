@@ -33,17 +33,7 @@
     font-family: 'Poppins';
     
     display: grid;
-    justify-items: center;
-}
-
-.starts::before {
-    z-index: -1;
-    position: absolute;
-    content: '';
-
-    background-image: url('../../assets/images/starts.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    /* justify-items: center; */
 }
 
 @media(min-width: 50px) {
@@ -74,14 +64,6 @@
     }
     .starts {
         margin: 18px 8.02325583% 30px ;
-    }
-    .starts::before {
-        min-width: 361px;
-        width: calc(100% - 8.02325583% - 8.02325583%);
-        height: 354px;
-        border-radius: 12px;
-
-        background-size: 100% 354px;
     }
 }
 
@@ -125,13 +107,6 @@
     .starts {
         margin: 40px 6.8359375% 43.75px;
     }
-    .starts::before {
-        width: calc(100% - 6.8359375% - 6.8359375%);
-        height: 667px;
-        border-radius: 0;
-        
-        background-size: auto;
-    }
 }
 
 @media(min-width: 1440px) {
@@ -166,11 +141,5 @@
     }
     .starts {
         margin: 52px 4.861111% 59px;
-    }
-    .starts::before {
-        width: 100%;
-        border-radius: 12px;
-        
-        background-size: auto;
     }
 }
