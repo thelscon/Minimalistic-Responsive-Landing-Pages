@@ -33,7 +33,6 @@
     font-family: 'Poppins';
     
     display: grid;
-    /* justify-items: center; */
 }
 
 @media(min-width: 50px) {
