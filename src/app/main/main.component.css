@@ -39,7 +39,7 @@
     .the-dawn-component {
         margin: 31px 8.1395348% 18px;
 
-        grid-template-areas: 'title' 'content' 'button' 'first-wrap' 'second-wrap';
+        grid-template-areas: 'title' 'content' 'button' 'images';
     }
     .wellbeing-component {
         margin: 18px 8.1395348%;
@@ -73,7 +73,7 @@
         grid-template-areas:    'title title'
                                 'content content'
                                 'button button'
-                                'first-wrap second-wrap';
+                                'images images';
         column-gap: 28px;
     }
     .wellbeing-component {

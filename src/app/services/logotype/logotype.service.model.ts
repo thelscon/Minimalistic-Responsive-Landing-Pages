@@ -1,3 +1,7 @@
+export enum LogotypeEnum {
+    Name = 'Logo'
+}
+
 export interface LogotypeServiceModel {
-    readonly name : string
+    readonly name : LogotypeEnum.Name
 }

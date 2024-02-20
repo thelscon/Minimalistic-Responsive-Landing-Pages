@@ -4,8 +4,17 @@
     
     justify-content: space-between;
 }
-.main-conponent {
+
+.main-component {
     display: grid;
+}
+
+.footer-component {
+    display: grid;
+    row-gap: 36px;
+
+    font-family: 'Poppins';
+    background-color: #285E67;
 }
 
 @media(min-width: 50px) {
@@ -13,6 +22,10 @@
         margin: 27px 8.1395348% 32px;
 
         column-gap: 35px;
+    }
+    .footer-component {
+        padding: 78px 125px 78px 139px;
+        grid-template-areas: 'logotype' 'navigation' 'social-media';
     }
 }
 
@@ -27,5 +40,11 @@
 @media(min-width: 1440px) {
     .header-component {
         margin: 32px 4.7916666% 71px 6.111111%;
+    }
+    .footer-component {
+        padding-right: 139px;
+        grid-template-areas:    'logotype navigation'
+                                'social-media social-media';
+        gap: 36px;
     }
 }
